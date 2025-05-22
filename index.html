@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warhammer 40K: Space Marine 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Selection Modal -->
+    <div id="languageModal" class="modal">
+        <div class="modal-content">
+            <h1 class="glowing-text">FOR THE EMPEROR!</h1>
+            <p class="language-prompt">Select your language / Wybierz język</p>
+            <div class="language-buttons">
+                <button id="englishBtn" class="language-btn">English</button>
+                <button id="polishBtn" class="language-btn">Polski</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Website Content -->
+    <div id="mainContent" class="hidden">
+        <!-- Header with Navigation -->
+        <header class="main-header">
+            <div class="header-overlay">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#home" data-en="Home" data-pl="Strona Główna">Home</a></li>
+                        <li><a href="#story" data-en="Story" data-pl="Historia">Story</a></li>
+                        <li><a href="#titus" data-en="Captain Titus" data-pl="Kapitan Titus">Captain Titus</a></li>
+                        <li><a href="#marines" data-en="Space Marines" data-pl="Kosmiczni Marines">Space Marines</a></li>
+                        <li><a href="#gameplay" data-en="Gameplay" data-pl="Rozgrywka">Gameplay</a></li>
+                        <li><a href="#factions" data-en="Factions" data-pl="Frakcje">Factions</a></li>
+                        <li><a href="#weapons" data-en="Weapons" data-pl="Bronie">Weapons</a></li>
+                        <li><a href="#lore" data-en="Lore" data-pl="Świat">Lore</a></li>
+                        <li><a href="#gallery" data-en="Gallery" data-pl="Galeria">Gallery</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher">
+                    <button id="switchToEnglish" class="lang-switch-btn">EN</button>
+                    <button id="switchToPolish" class="lang-switch-btn">PL</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Sections -->
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="fullscreen-section">
+                <div class="section-content">
+                    <h1 data-en="WARHAMMER 40K: SPACE MARINE 2" data-pl="WARHAMMER 40K: SPACE MARINE 2">WARHAMMER 40K: SPACE MARINE 2</h1>
+                    <p class="subtitle" data-en="In the grim darkness of the far future, there is only war..." 
+                                       data-pl="W mrocznej ciemności dalekiej przyszłości, jest tylko wojna...">
+                        In the grim darkness of the far future, there is only war...
+                    </p>
+                    <!-- IMAGE TO BE PLACED HERE: Main banner image of Space Marine 2 -->
+                    <div class="main-banner">
+                        <!-- REPLACE WITH ACTUAL IMAGE -->
+                        <img src="" alt="Space Marine 2 Banner" class="banner-image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Story Section -->
+            <section id="story" class="content-section">
+                <div class="section-header">
+                    <h2 data-en="The Story of Space Marine 2" data-pl="Historia Space Marine 2">The Story of Space Marine 2</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="story-content">
+                    <div class="story-text">
+                        <h3 data-en="The Return of Titus" data-pl="Powrót Titusa">The Return of Titus</h3>
+                        <p data-en="The story continues with Captain Titus, now a Primaris Marine, returning to battle after being cleared of heresy charges. The Imperium faces new threats from the Tyranids and Chaos forces."
+                           data-pl="Historia kontynuuje się z Kapitanem Titusem, teraz jako Marine Primaris, wracającym do walki po uniewinnieniu z zarzutów herezji. Imperium stoi przed nowymi zagrożeniami ze strony Tyranidów i sił Chaosu.">
+                            The story continues with Captain Titus, now a Primaris Marine, returning to battle after being cleared of heresy charges. The Imperium faces new threats from the Tyranids and Chaos forces.
+                        </p>
+                        <!-- More story content would continue here -->
+                    </div>
+                    <!-- IMAGE TO BE PLACED HERE: Image of Titus as Primaris Marine -->
+                    <div class="story-image">
+                        <img src="Warhammer-40000-space-marine-2.jpg alt="Titus as Primaris Marine">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Captain Titus Section -->
+            <section id="titus" class="content-section alt-section">
+                <div class="section-header">
+                    <h2 data-en="Captain Titus" data-pl="Kapitan Titus">Captain Titus</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="character-content">
+                    <!-- IMAGE TO BE PLACED HERE: Portrait of Titus -->
+                    <div class="character-image">
+                        <img src="Warhammer-40000-space-marine-2.jpg" alt="Captain Titus">
+                    </div>
+                    <div class="character-details">
+                        <h3 data-en="The Legendary Space Marine" data-pl="Legendarny Kosmiczny Marine">The Legendary Space Marine</h3>
+                        <p data-en="Captain Titus is a veteran of the Ultramarines Chapter, known for his exceptional combat skills and unorthodox methods. After surviving the events of the first game, he was transformed into a Primaris Marine."
+                           data-pl="Kapitan Titus to weteran rozdziału Ultramarine'ów, znany z wyjątkowych umiejętności bojowych i nieortodoksyjnych metod. Po przetrwaniu wydarzeń z pierwszej gry, został przekształcony w Marine'a Primaris.">
+                            Captain Titus is a veteran of the Ultramarines Chapter, known for his exceptional combat skills and unorthodox methods.
+                        </p>
+                        <div class="character-stats">
+                            <div class="stat-item">
+                                <span class="stat-label" data-en="Chapter:" data-pl="Rozdział:">Chapter:</span>
+                                <span class="stat-value">Ultramarines</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label" data-en="Rank:" data-pl="Ranga:">Rank:</span>
+                                <span class="stat-value">Captain</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label" data-en="Type:" data-pl="Typ:">Type:</span>
+                                <span class="stat-value">Primaris Space Marine</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Space Marines Section -->
+            <section id="marines" class="content-section">
+                <div class="section-header">
+                    <h2 data-en="Space Marines" data-pl="Kosmiczni Marines">Space Marines</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="marines-grid">
+                    <div class="marine-card">
+                        <!-- IMAGE TO BE PLACED HERE: Tactical Marine -->
+                        <div class="marine-image">
+                            <img src="images/tactical-marine.jpg" alt="Tactical Marine">
+                        </div>
+                        <h3 data-en="Tactical Marine" data-pl="Marine Taktyczny">Tactical Marine</h3>
+                        <p data-en="The backbone of any Space Marine force, versatile warriors equipped with bolters and combat knives."
+                           data-pl="Podstawa każdej siły Kosmicznych Marines, wszechstronni wojownicy wyposażeni w boltery i noże bojowe.">
+                            The backbone of any Space Marine force, versatile warriors equipped with bolters and combat knives.
+                        </p>
+                    </div>
+                    <div class="marine-card">
+                        <!-- IMAGE TO BE PLACED HERE: Assault Marine -->
+                        <div class="marine-image">
+                            <img src="images/assault-marine.jpg" alt="Assault Marine">
+                        </div>
+                        <h3 data-en="Assault Marine" data-pl="Marine Szturmowy">Assault Marine</h3>
+                        <p data-en="Close-quarters specialists who use jump packs to quickly engage the enemy in melee combat."
+                           data-pl="Specjaliści od walki wręcz, używający plecaków odrzutowych do szybkiego ataku na wroga.">
+                            Close-quarters specialists who use jump packs to quickly engage the enemy in melee combat.
+                        </p>
+                    </div>
+                    <div class="marine-card">
+                        <!-- IMAGE TO BE PLACED HERE: Devastator Marine -->
+                        <div class="marine-image">
+                            <img src="images/devastator-marine.jpg" alt="Devastator Marine">
+                        </div>
+                        <h3 data-en="Devastator Marine" data-pl="Marine Niszczyciel">Devastator Marine</h3>
+                        <p data-en="Heavy weapons experts who provide fire support with heavy bolters, plasma cannons, and missile launchers."
+                           data-pl="Eksperci od broni ciężkiej, zapewniający wsparcie ogniowe z użyciem ciężkich bolterów, dział plazmowych i wyrzutni rakiet.">
+                            Heavy weapons experts who provide fire support with heavy bolters, plasma cannons, and missile launchers.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Other sections would follow the same pattern -->
+            <!-- Gameplay, Factions, Weapons, Lore, Gallery sections would be here -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span data-en="FOR THE EMPEROR!" data-pl="ZA IMPERATORA!">FOR THE EMPEROR!</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#" data-en="About" data-pl="O nas">About</a>
+                    <a href="#" data-en="Contact" data-pl="Kontakt">Contact</a>
+                    <a href="#" data-en="Privacy Policy" data-pl="Polityka Prywatności">Privacy Policy</a>
+                </div>
+                <div class="footer-disclaimer">
+                    <p data-en="This is an unofficial fan website. Warhammer 40,000 and Space Marine are trademarks of Games Workshop Limited."
+                       data-pl="To nieoficjalna strona fanowska. Warhammer 40,000 i Space Marine są znakami towarowymi Games Workshop Limited.">
+                        This is an unofficial fan website. Warhammer 40,000 and Space Marine are trademarks of Games Workshop Limited.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
